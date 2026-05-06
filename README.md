@@ -1,120 +1,98 @@
-🔐 Privacy Policy — Hawqon
+# Werpsyn - Public Website Repository
 
-Last updated: April 30, 2026
+This is the public GitHub Pages website repository for the [Werpsyn iOS app](https://apps.apple.com/app/werpsyn).
 
-Hawqon (“we”, “us”, “our”) provides AI-powered Bitcoin market intelligence.
-This Privacy Policy explains what data we collect, how we use it, and your rights.
+## Important
 
-1. What Data We Collect
-a. No Account Required
+This repository contains **only** public website content, legal documents, and support information.
 
-Hawqon does not require user accounts.
-We do not collect personal identifiers such as name, email, or phone number.
+**Do NOT store in this repository:**
+- iOS app source code
+- Backend/API source code
+- API keys, secrets, or tokens
+- Private endpoints or internal documentation
+- Database credentials
+- Deployment configurations
 
-b. Usage Data (Automatic)
+The actual app code and backend services are stored in private repositories.
 
-We may collect limited technical data to operate and improve the app:
+## Website Structure
 
-Device type and OS version
-App usage events (e.g. screens viewed, features used)
-IP address (for security and performance)
-Crash logs and diagnostics
+The website is built using plain HTML and CSS (no frameworks or build tools) and is served via GitHub Pages.
 
-👉 This data is not used to identify you personally.
+### File Organization
 
-c. Push Notifications (Optional)
+```
+docs/
+├── index.html                  # Homepage
+├── privacy-policy/
+│   └── index.html             # Privacy Policy
+├── support/
+│   └── index.html             # Support page
+├── app-info/
+│   └── index.html             # App Information
+├── donations/
+│   └── index.html             # Support Development
+└── assets/
+    └── style.css              # Shared styles
+```
 
-If enabled, we may send notifications about:
+## Enabling GitHub Pages
 
-Market signals
-App updates
+To enable GitHub Pages for this repository:
 
-You can disable notifications at any time in your device settings.
+1. Go to repository **Settings**
+2. Navigate to **Pages** (left sidebar)
+3. Under "Build and deployment"
+   - **Source:** Select "Deploy from a branch"
+   - **Branch:** Select `main`
+   - **Folder:** Select `/docs`
+4. Click **Save**
 
-2. How We Use Data
+GitHub will automatically deploy the site within a few moments.
 
-We use collected data to:
+## Public URLs
 
-Operate and maintain the app
-Improve performance and reliability
-Detect bugs and security issues
-Analyze feature usage
+Once enabled, the website will be available at:
 
-👉 We do NOT:
+- **Homepage:** https://ontwerps.github.io/werpsyn/
+- **Privacy Policy:** https://ontwerps.github.io/werpsyn/privacy-policy/
+- **Support:** https://ontwerps.github.io/werpsyn/support/
+- **App Information:** https://ontwerps.github.io/werpsyn/app-info/
+- **Support Development:** https://ontwerps.github.io/werpsyn/donations/
 
-Sell your data
-Use data for advertising
-Track you across apps or websites
-3. AI & Signal Processing
+## App Store Compliance
 
-Hawqon analyzes publicly available data sources, including:
+This website is configured for use in App Store Connect:
+- Privacy Policy URL: `https://ontwerps.github.io/werpsyn/privacy-policy/`
+- Support URL: `https://ontwerps.github.io/werpsyn/support/`
+- Marketing URL: `https://ontwerps.github.io/werpsyn/`
 
-News articles
-Market data
-On-chain information
+## Security Notes
 
-This data is processed by AI systems to generate:
+⚠️ **Before committing:**
 
-Market signals
-Confidence scores
-Impact estimates
+- Never commit API keys, secrets, or tokens
+- Never commit app source code or backend code
+- Never commit private endpoints or credentials
+- Use this repository for public-facing content only
 
-👉 No personal user data is used in AI processing.
+If you accidentally commit sensitive data, revoke those credentials immediately and rotate all secrets.
 
-4. Data Sharing
+## Development
 
-We may share limited technical data with trusted service providers for:
+All pages are standalone HTML files with inline styles or external CSS. To test locally:
 
-Hosting (e.g. servers, APIs)
-Analytics (app performance only)
+```bash
+# Python 3
+python -m http.server 8000
 
-All providers are required to protect your data.
+# Or Node.js
+npx http-server
+```
 
-We do not share personal data with third parties for marketing.
+Then visit `http://localhost:8000/werpsyn/` in your browser.
 
-5. Data Retention
+## License
 
-We retain technical data only as long as necessary:
-
-Analytics data: up to 24 months
-Logs and diagnostics: up to 24 months
-
-Data may be anonymized or deleted earlier.
-
-6. Your Rights (EU / GDPR)
-
-As a user in the Netherlands / EU, you have the right to:
-
-Access your data
-Request deletion
-Object to processing
-
-Contact us to exercise your rights.
-
-7. Security
-
-We use industry-standard security measures to protect data.
-However, no system is completely secure.
-
-8. Children
-
-Hawqon is not intended for users under 16.
-We do not knowingly collect data from children.
-
-9. Third-Party Links
-
-The app may contain links to external websites.
-We are not responsible for their privacy practices.
-
-10. Changes
-
-We may update this policy. Changes will be posted here.
-
-11. Contact
-
-Email: info@ontwerps.com
-
-⚠️ Important Disclaimer
-
-Hawqon provides informational market intelligence only.
-It does not provide financial advice or trading recommendations.
+This repository contains public information and legal documents for the Werpsyn app.
